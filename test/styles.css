@@ -1,0 +1,15 @@
+body {
+    background-color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: lawngreen;
+    display: flex;
+}
+
+.block1 {
+    background-color:bisque;
+}
+
+.block2 {
+    background-color: aquamarine;
+}

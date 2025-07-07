@@ -1,0 +1,98 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    padding: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  /* Hero Section */
+  .sample-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 600px) {
+    .sample-gallery {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 15 rem;
+    }
+  }
+  
+  .welcome {
+    text-align: center;
+  }
+
+  .sample-gallery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .sample-gallery img {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #888;
+  }
+
+  footer a i {
+  font-size: 24px;
+  color: #E1306C; /* Instagram pink */
+  transition: color 0.3s;
+  }
+
+  footer a i:hover {
+    color: #C13584;
+  }
+
+  
