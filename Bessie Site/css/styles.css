@@ -108,4 +108,24 @@
     color: #C13584;
   }
 
+  /* MAIN GALLERY PAGE */
+    .main-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 600px) {
+    .main-gallery {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 15 rem;
+    }
+  }
+  .main-gallery img {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
   
