@@ -6,16 +6,29 @@
   }
   
   body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fdfdfd;
-    color: #333;
-    padding: 1rem;
-    line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(-45deg, #fdfdfd, #f0f0ff, #fdf0f0, #f0fdf0);
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+
+  color: #333;
+  padding: 1rem;
+  line-height: 1.6;
   }
-  
+
+  @keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+  }
+
+
   /* Header */
   header {
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:azure
   }
   
   header h1 {
