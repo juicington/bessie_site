@@ -6,11 +6,10 @@
   }
   
   body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', sans-serif;
   background: linear-gradient(-45deg, #fdfdfd, #f0f0ff, #fdf0f0, #f0fdf0);
   background-size: 400% 400%;
   animation: gradientShift 30s ease infinite;
-
   color: #333;
   padding: 1rem;
   line-height: 1.6;
@@ -28,6 +27,7 @@
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color:azure
   }
   
@@ -35,7 +35,17 @@
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
-  
+
+  header h1 a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+  header h1 a:hover {
+  opacity: 0.8;
+ }
+
+  /* Nav Bar */
   nav {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -59,6 +69,12 @@
   }
   
   /* Hero Section */
+
+  main {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.3rem;
+  }
   .sample-gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -126,6 +142,6 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    display: block;
+    display:block;
   }
   
