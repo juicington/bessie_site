@@ -37,11 +37,19 @@
     <form> <!--contact form for inquiries about-->
       <fieldset>
         <legend>Inquire about a piece</legend>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
+        <div class="message_info">
+          <div class="name">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+          </div>
+          <div class="message">
+            <label for="inquiries">Contact Bessie about her art</label><br>
+            <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea><br>
+            <input type="submit" value="Submit"><br>
+          </div>
+        </div>
       </fieldset>
     </form>
   </main>

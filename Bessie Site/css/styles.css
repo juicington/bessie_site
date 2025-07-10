@@ -106,6 +106,12 @@
     display: block;
   }
   
+  /* Form */
+  .message_info {
+    display: flex;
+    justify-content:space-around
+  }
+
   /* Footer */
   footer {
     margin-top: 3rem;
