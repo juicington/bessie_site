@@ -28,7 +28,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:azure
+    background-color:azure;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   
   header h1 {
@@ -106,6 +108,25 @@
     display: block;
   }
   
+  /* About Teaser */
+  .about {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid green;
+  }
+
+  .about img {
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px dashed blue;
+  }
+
+  .about p {
+    border: 5px dashed red;
+    max-width: 50%;
+  }
   /* Form */
   .message_info {
     display: flex;
