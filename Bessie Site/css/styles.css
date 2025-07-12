@@ -34,7 +34,7 @@
   }
   
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin-bottom: 0.5rem;
   }
 
@@ -92,9 +92,6 @@
   
   .welcome {
     text-align: center;
-  }
-
-  .sample-gallery h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     
