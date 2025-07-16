@@ -86,7 +86,7 @@
   @media (min-width: 600px) {
     .sample-gallery {
       grid-template-columns: repeat(2, 1fr);
-      margin: 0 15 rem;
+      margin: 0 15rem;
     }
   }
   
@@ -127,7 +127,7 @@
   /* Form */
   .message_info {
     display: flex;
-    justify-content:space-around
+    justify-content:space-around;
   }
 
   /* Footer */
@@ -158,7 +158,7 @@
   @media (min-width: 600px) {
     .main-gallery {
       grid-template-columns: repeat(2, 1fr);
-      margin: 0 15 rem;
+      margin: 0 15rem;
     }
   }
   .main-gallery img {
