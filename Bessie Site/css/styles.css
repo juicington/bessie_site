@@ -13,6 +13,13 @@ body {
   color: #333;
   padding: 1rem;
   line-height: 1.6;
+  border: 3px dashed red;
+}
+
+main {
+  border: 3px dashed blue;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 @keyframes gradientShift {
@@ -30,14 +37,14 @@ header {
   background-color: azure;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  /*border: 3px dashed greenyellow;*/
+  border: 3px dashed greenyellow;
 }
 
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-align: center;
-  /*border: 3px dashed red;*/
+  border: 3px dashed red;
   margin-bottom: 0,25rem;
 }
 
@@ -56,7 +63,7 @@ nav {
   font-weight: 500;
   letter-spacing: 0.5px;
   margin-top: 1rem;
-  /*border: 3px dashed blue;*/
+  border: 3px dashed blue;
   width: 100%;
   margin-top: 0.25rem;
 }
@@ -93,13 +100,16 @@ main {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  border: 3px dashed red;
 }
 
 .sample-gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 0 1rem;
+  margin: 0 .4rem;
+  text-align: center;
+  border: 3px dashed red;
 }
 
 .sample-gallery img {
@@ -114,22 +124,22 @@ main {
 .about {
   display: block;
   margin: 1rem auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   text-align: center;
   padding: 1rem;
 }
 
 .about img {
-  max-width: 50%;
+  max-width: 65%;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px dashed blue;
+  /* border: 3px dashed blue; */
   margin-bottom: 1rem;
 }
 
 .about p {
-  border: 3px dashed red;
+  /* border: 3px dashed red; */
   max-width: 90%;
   margin: 0 auto;
 }
