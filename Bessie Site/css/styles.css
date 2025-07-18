@@ -1,11 +1,11 @@
 /* Base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Cormorant Garamond', sans-serif;
   background: linear-gradient(-45deg, #fdfdfd, #f0f0ff, #fdf0f0, #f0fdf0);
   background-size: 400% 400%;
@@ -13,159 +13,235 @@
   color: #333;
   padding: 1rem;
   line-height: 1.6;
-  }
+}
 
-  @keyframes gradientShift {
+@keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-  }
+}
 
+/* Header */
+header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: azure;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  /*border: 3px dashed greenyellow;*/
+}
 
-  /* Header */
-  header {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:azure;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
-  header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-  }
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  /*border: 3px dashed red;*/
+  margin-bottom: 0,25rem;
+}
 
-  header h1 a {
+header h1 a {
   text-decoration: none;
   color: inherit;
-  }
+}
 
-  header h1 a:hover {
+header h1 a:hover {
   opacity: 0.8;
- }
+}
 
-  /* Nav Bar */
-  nav {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
+/* Nav Bar */
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  /*border: 3px dashed blue;*/
+  width: 100%;
+  margin-top: 0.25rem;
+}
 
+nav ul {
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10%;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #ecafd1;
+}
+
+/* Hero Section */
+main {
+  padding: 0 1rem;
+  font-size: 1.1rem;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.sample-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+.sample-gallery img {
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* About Teaser */
+.about {
+  display: block;
+  margin: 1rem auto;
+  border: 2px solid green;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px dashed blue;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  border: 3px dashed red;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Message Info Section */
+.message_info {
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Inquiry Form */
+form {
+  margin: 0 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+footer a i {
+  font-size: 24px;
+  color: #E1306C; /* Instagram pink */
+  transition: color 0.3s;
+}
+
+footer a i:hover {
+  color: #C13584;
+}
+
+/* Main Gallery Page */
+.main-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+.main-gallery img {
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* -----------------------------
+   Responsive Enhancements
+------------------------------ */
+
+@media (min-width: 600px) {
   nav ul {
-    list-style: none;
-    display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 1rem;
-    padding: 0;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #555;
+
+  .sample-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
   }
-  
-  nav a:hover {
-    color: #000;
+
+  .main-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
   }
-  
-  /* Hero Section */
+}
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 10%;
+  }
 
   main {
-  padding-left: 10%;
-  padding-right: 10%;
-  font-size: 1.3rem;
-  }
-  .sample-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    padding: 0 10%;
   }
 
-  @media (min-width: 600px) {
-    .sample-gallery {
-      grid-template-columns: repeat(2, 1fr);
-      margin: 0 15rem;
-    }
-  }
-  
-  .welcome {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    
-  }
-  
-  .sample-gallery img {
-    margin-top: 1rem;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-  }
-  
-  /* About Teaser */
   .about {
     display: flex;
     justify-content: space-around;
-    border: 5px solid green;
+    margin: 0 15rem;
+    text-align: left;
   }
 
   .about img {
     max-width: 20%;
-    max-height: 20%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px dashed blue;
+    margin-bottom: 0;
   }
 
   .about p {
-    border: 5px dashed red;
     max-width: 50%;
   }
-  /* Form */
+
   .message_info {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
-  /* Footer */
-  footer {
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 0.875rem;
-    color: #888;
+  form {
+    margin: 0 15rem;
   }
 
-  footer a i {
-  font-size: 24px;
-  color: #E1306C; /* Instagram pink */
-  transition: color 0.3s;
+  .sample-gallery {
+    margin: 0 15rem;
   }
 
-  footer a i:hover {
-    color: #C13584;
+  .main-gallery {
+    margin: 0 15rem;
   }
-
-  /* MAIN GALLERY PAGE */
-    .main-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  @media (min-width: 600px) {
-    .main-gallery {
-      grid-template-columns: repeat(2, 1fr);
-      margin: 0 15rem;
-    }
-  }
-  .main-gallery img {
-    margin-top: 1rem;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display:block;
-  }
-  
+}

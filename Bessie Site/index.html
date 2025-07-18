@@ -24,8 +24,8 @@
 
   <main>
     <div class="welcome">
-      <h2>Welcome</h2>
-      <p>Probably replace this text with one or two featured art pieces with some animation</p>
+      <h2>Sample</h2>
+      <p>//replace this text with one or two featured art pieces with some animation//</p>
     </div>
     <section class="sample-gallery">
       <img src="images/image1.jpg" alt="Featured artwork"/>
@@ -38,24 +38,27 @@
       <img src="images/BessiePortait.jpg" alt="Bessie portrait"/>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="about.html">learn more about Bessie</a></p>
     </section>
-    <form> <!--contact form for inquiries about-->
-      <fieldset>
-        <legend>Inquire about a piece</legend>
-        <div class="message_info">
-          <div class="name">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
+    <details class="inquire-toggle">
+      <summary>Inquire</summary>
+      <form> <!--contact form for inquiries about-->
+        <fieldset>
+          <legend>Inquire about a piece</legend>
+            <div class="message_info">
+              <div class="name">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+              </div>
+            <div class="message">
+              <label for="inquiries">Contact Bessie about her art</label><br>
+              <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea><br>
+              <input type="submit" value="Submit"><br>
+            </div>
           </div>
-          <div class="message">
-            <label for="inquiries">Contact Bessie about her art</label><br>
-            <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea><br>
-            <input type="submit" value="Submit"><br>
-          </div>
-        </div>
-      </fieldset>
-    </form>
+        </fieldset>
+      </form>
+    </details>
   </main>
 
   <footer> <!-- add some color hover for the instagram and maybe add email too -->
